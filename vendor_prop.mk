@@ -65,7 +65,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.report_codec=1 \
     persist.vendor.radio.sib16_support=1 \
     ril.subscription.types=NV,RUIM \
-    rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so \
     ro.telephony.default_network=22,22 \
     telephony.lteOnCdmaDevice=1
 
@@ -106,7 +105,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.cne.feature=1 \
     persist.vendor.dpm.feature=1 \
-    persist.vendor.dpm.nsrm.bkg.evt
+    persist.vendor.dpm.nsrm.bkg.evt=3955
 
 # Dalvik
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -131,10 +130,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.data.df.dev_name=rmnet_usb0 \
     persist.vendor.data.iwlan.enable=true \
     persist.vendor.data.mode=concurrent
-
-# OpenGLES
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.opengles.version=196610
 
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.early_phase_offset_ns=1500000 \
